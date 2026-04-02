@@ -781,13 +781,13 @@ function AnalyticsPage({ devices, token }) {
   const [loading, setLoading]       = useState(false);
 
   useEffect(() => {
-    if (!selectedId || historyMap[selectedId]) return;
-    setLoading(true);
-    DeviceService.getHistory(token, selectedId)
-      .then(h => setHistoryMap(prev => ({ ...prev, [selectedId]: h })))
-      .catch(() => {})
-      .finally(() => setLoading(false));
-  }, [selectedId, token]);
+  if (!selectedId || historyMap[selectedId]) return;
+  setLoading(true);
+  DeviceService.getHistory(token, selectedId)
+    .then(h => setHistoryMap(prev => ({ ...prev, [selectedId]: h })))
+    .catch(() => {})
+    .finally(() => setLoading(false));
+}, [selectedId, token, historyMap]);
 
   const currentHistory = historyMap[selectedId] || [];
   const selectedName   = devices.find(d => d.id === selectedId)?.name || "";
