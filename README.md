@@ -1,4 +1,4 @@
-# 🌐 Anedya IoT Dashboard
+ # 🌐 Anedya IoT Dashboard
 
 A fully functional, production-grade **IoT Analytics Dashboard** built with **React** and **Create React App**. It features real-time device monitoring, historical data visualization, relay control, secure authentication, and Role-Based Access Control (RBAC).
 
@@ -6,7 +6,7 @@ A fully functional, production-grade **IoT Analytics Dashboard** built with **Re
 
 ## 🚀 Live Demo
 
-> **URL:** `https://Heisenberg-WW-JP.github.io/anedya-dashboard`
+> **URL:** `(https://iotdashboard-chi.vercel.app/)`
 
 ### Demo Login Credentials
 
